@@ -19,7 +19,7 @@ export default function FormBuilder() {
   const [questions, setQuestions] = useState([]);
   const [submitted, setSubmitted] = useState(null);
 
-  // load from localStorage (preferred) or backend on mount
+ 
   useEffect(() => {
     const stored = window.localStorage.getItem(LOCAL_STORAGE_KEY);
     if (stored) {
@@ -32,7 +32,7 @@ export default function FormBuilder() {
       }
     }
 
-    // fallback: fetch from backend API
+    
     fetch('/api/form')
       .then((res) => res.json())
       .then((data) => {
@@ -45,7 +45,7 @@ export default function FormBuilder() {
       });
   }, []);
 
-  // persist to localStorage and backend whenever questions change
+  
   useEffect(() => {
     window.localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(questions));
     fetch('/api/form', {
