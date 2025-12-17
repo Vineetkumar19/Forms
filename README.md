@@ -3,7 +3,6 @@ Project Overview
 
 This project is a dynamic nested form builder developed using React. It allows users to create questions and sub-questions dynamically, where questions can depend on previous answers. The application demonstrates recursive UI rendering, conditional logic, and structured state management without using any backend or APIs. 
 
-Task 5 - Software Developer Int…
 
 Key Functionality
 Dynamic Question Creation
@@ -26,7 +25,6 @@ Form Submission and Review
 
 On submission, the complete set of questions is displayed in a structured hierarchical format within the application. This allows users to review the full question tree without any backend processing. 
 
-Task 5 - Software Developer Int…
 
 Bonus Features
 Local Storage Persistence
